@@ -36,8 +36,7 @@ namespace Pokedex2022_CSharp
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
             pesoPokemon.Text = "Peso: " + misPokemons.Rows[0]["peso"].ToString();
             alturaPokemon.Text = "Altura: " + misPokemons.Rows[0]["altura"].ToString();
-            tipo1.Text = "Tipo/s:  " + misPokemons.Rows[0]["tipo1"].ToString();
-            tipo2.Text = misPokemons.Rows[0]["tipo2"].ToString();
+            tipos.Text = "Tipo/s:    " + misPokemons.Rows[0]["tipo1"].ToString() + "    " + misPokemons.Rows[0]["tipo2"].ToString();
             especiePokemon.Text = "Especie: " + misPokemons.Rows[0]["especie"].ToString();
             habitatPokemon.Text = "Habitat: " + misPokemons.Rows[0]["habitat"].ToString();
             habilidadPokemon.Text = "Habilidad: " + misPokemons.Rows[0]["habilidad"].ToString();
@@ -64,8 +63,7 @@ namespace Pokedex2022_CSharp
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
             pesoPokemon.Text = "Peso: " + misPokemons.Rows[0]["peso"].ToString();
             alturaPokemon.Text = "Altura: " + misPokemons.Rows[0]["altura"].ToString();
-            tipo1.Text = "Tipo/s:  " + misPokemons.Rows[0]["tipo1"].ToString();
-            tipo2.Text = misPokemons.Rows[0]["tipo2"].ToString();
+            tipos.Text = "Tipo/s:    " + misPokemons.Rows[0]["tipo1"].ToString() + "    " + misPokemons.Rows[0]["tipo2"].ToString();
             especiePokemon.Text = "Especie: " + misPokemons.Rows[0]["especie"].ToString();
             habitatPokemon.Text = "Habitat: " + misPokemons.Rows[0]["habitat"].ToString();
             habilidadPokemon.Text = "Habilidad: " + misPokemons.Rows[0]["habilidad"].ToString();
