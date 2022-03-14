@@ -16,6 +16,8 @@ namespace Pokedex2022_CSharp
         Conexion miConexion = new Conexion();
         DataTable misPokemons = new DataTable();
         int idActual = 1; //guarda el id del pokemon que se esta viendo.
+        int idPreEvolucion;
+        int idPosEvolucion;
         public VentanaPrincipal()
         {
             InitializeComponent();
@@ -34,8 +36,8 @@ namespace Pokedex2022_CSharp
             }
             misPokemons = miConexion.getPokemonPorId(idActual);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
-            pesoPokemon.Text = "Peso: " + misPokemons.Rows[0]["peso"].ToString();
-            alturaPokemon.Text = "Altura: " + misPokemons.Rows[0]["altura"].ToString();
+            pesoPokemon.Text = "Peso: " + misPokemons.Rows[0]["peso"].ToString() + "kg";
+            alturaPokemon.Text = "Altura: " + misPokemons.Rows[0]["altura"].ToString() + "m";
             tipos.Text = "Tipo/s:    " + misPokemons.Rows[0]["tipo1"].ToString() + "    " + misPokemons.Rows[0]["tipo2"].ToString();
             especiePokemon.Text = "Especie: " + misPokemons.Rows[0]["especie"].ToString();
             habitatPokemon.Text = "Habitat: " + misPokemons.Rows[0]["habitat"].ToString();
@@ -61,8 +63,8 @@ namespace Pokedex2022_CSharp
             }
             misPokemons = miConexion.getPokemonPorId(idActual);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
-            pesoPokemon.Text = "Peso: " + misPokemons.Rows[0]["peso"].ToString();
-            alturaPokemon.Text = "Altura: " + misPokemons.Rows[0]["altura"].ToString();
+            pesoPokemon.Text = "Peso: " + misPokemons.Rows[0]["peso"].ToString() + "kg";
+            alturaPokemon.Text = "Altura: " + misPokemons.Rows[0]["altura"].ToString() + "m";
             tipos.Text = "Tipo/s:    " + misPokemons.Rows[0]["tipo1"].ToString() + "    " + misPokemons.Rows[0]["tipo2"].ToString();
             especiePokemon.Text = "Especie: " + misPokemons.Rows[0]["especie"].ToString();
             habitatPokemon.Text = "Habitat: " + misPokemons.Rows[0]["habitat"].ToString();

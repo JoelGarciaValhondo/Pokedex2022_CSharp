@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaDescripcion));
             this.tituloTextoDescripcion = new System.Windows.Forms.Label();
             this.textoDescripcion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tituloTextoDescripcion
             // 
-            this.tituloTextoDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tituloTextoDescripcion.ForeColor = System.Drawing.Color.Red;
+            this.tituloTextoDescripcion.BackColor = System.Drawing.Color.Transparent;
+            this.tituloTextoDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tituloTextoDescripcion.ForeColor = System.Drawing.Color.DarkBlue;
             this.tituloTextoDescripcion.Location = new System.Drawing.Point(12, 26);
             this.tituloTextoDescripcion.Name = "tituloTextoDescripcion";
             this.tituloTextoDescripcion.Size = new System.Drawing.Size(252, 29);
@@ -46,9 +48,10 @@
             // 
             // textoDescripcion
             // 
-            this.textoDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textoDescripcion.ForeColor = System.Drawing.Color.Red;
-            this.textoDescripcion.Location = new System.Drawing.Point(38, 55);
+            this.textoDescripcion.BackColor = System.Drawing.Color.Transparent;
+            this.textoDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textoDescripcion.ForeColor = System.Drawing.Color.DarkBlue;
+            this.textoDescripcion.Location = new System.Drawing.Point(49, 55);
             this.textoDescripcion.Name = "textoDescripcion";
             this.textoDescripcion.Size = new System.Drawing.Size(198, 169);
             this.textoDescripcion.TabIndex = 1;
@@ -60,7 +63,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(276, 248);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(290, 248);
             this.Controls.Add(this.textoDescripcion);
             this.Controls.Add(this.tituloTextoDescripcion);
             this.Name = "VentanaDescripcion";
