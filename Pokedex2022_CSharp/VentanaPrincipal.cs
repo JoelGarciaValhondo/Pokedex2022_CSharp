@@ -13,11 +13,11 @@ namespace Pokedex2022_CSharp
 {
     public partial class VentanaPrincipal : Form
     {
+        //conexión a BBDD
         Conexion miConexion = new Conexion();
+        //pasar la BBDD a una datatable
         DataTable misPokemons = new DataTable();
         int idActual = 1; //guarda el id del pokemon que se esta viendo.
-        int idPreEvolucion;
-        int idPosEvolucion;
         public VentanaPrincipal()
         {
             InitializeComponent();
@@ -30,10 +30,12 @@ namespace Pokedex2022_CSharp
 
         private void izquierda_Click(object sender, EventArgs e)
         {
+            //para que no se pase en el primero
             if (idActual > 1)
             {
                 idActual--;
             }
+            //parametros que enseñar cuando le demos a este botón
             misPokemons = miConexion.getPokemonPorId(idActual);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
             pesoPokemon.Text = "Peso: " + misPokemons.Rows[0]["peso"].ToString() + "kg";
@@ -57,10 +59,12 @@ namespace Pokedex2022_CSharp
 
         private void derecha_Click(object sender, EventArgs e)
         {
+            //para que no se pase en el último
             if (idActual<151)
             {
                 idActual++;
             }
+            //parametros que enseñar cuando le demos a este botón
             misPokemons = miConexion.getPokemonPorId(idActual);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
             pesoPokemon.Text = "Peso: " + misPokemons.Rows[0]["peso"].ToString() + "kg";
@@ -74,6 +78,13 @@ namespace Pokedex2022_CSharp
             movimiento3.Text = "Movimiento 3:" + misPokemons.Rows[0]["movimiento3"].ToString();
             movimiento4.Text = "Movimiento 4:" + misPokemons.Rows[0]["movimiento4"].ToString();
             pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
+        }
+
+        private void descripcion_Click(object sender, EventArgs e)
+        {
+            //crear el segundo formm y mostrarlo pasandole el parametro del pokemon.
+            VentanaDescripcion desc = new VentanaDescripcion(idActual);
+            desc.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -129,12 +140,6 @@ namespace Pokedex2022_CSharp
         private void movimiento4_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void descripcion_Click(object sender, EventArgs e)
-        {
-            VentanaDescripcion desc = new VentanaDescripcion(idActual);
-            desc.Show();
         }
     }
 }
