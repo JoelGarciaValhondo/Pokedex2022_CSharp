@@ -12,17 +12,18 @@ namespace Pokedex2022_CSharp
 {
     public partial class VentanaDescripcion : Form
     {
+        //conexion a BBDD
         Conexion miConexion = new Conexion();
+        //añadir BBDD a datatable
         DataTable misPokemons = new DataTable();
-
-        int idActual;
 
         public VentanaDescripcion(int idActual)
         {
             InitializeComponent();
-            this.idActual = idActual;
             misPokemons = miConexion.getPokemonPorId(idActual);
+            //descripción
             textoDescripcion.Text = misPokemons.Rows[0]["descripcion"].ToString();
+            //titulo
             tituloTextoDescripcion.Text = "Descripción " + misPokemons.Rows[0]["nombre"].ToString();
         }
 
