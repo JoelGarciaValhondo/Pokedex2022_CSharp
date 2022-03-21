@@ -243,10 +243,10 @@
             // 
             // preEvolucion
             // 
-            this.preEvolucion.BackColor = System.Drawing.Color.Yellow;
+            this.preEvolucion.BackColor = System.Drawing.Color.Black;
             this.preEvolucion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.preEvolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.preEvolucion.ForeColor = System.Drawing.Color.Black;
+            this.preEvolucion.ForeColor = System.Drawing.Color.Yellow;
             this.preEvolucion.Location = new System.Drawing.Point(276, 139);
             this.preEvolucion.Name = "preEvolucion";
             this.preEvolucion.Size = new System.Drawing.Size(157, 50);
@@ -255,10 +255,10 @@
             // 
             // posEvolucion
             // 
-            this.posEvolucion.BackColor = System.Drawing.Color.Yellow;
+            this.posEvolucion.BackColor = System.Drawing.Color.Black;
             this.posEvolucion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.posEvolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.posEvolucion.ForeColor = System.Drawing.Color.Black;
+            this.posEvolucion.ForeColor = System.Drawing.Color.Yellow;
             this.posEvolucion.Location = new System.Drawing.Point(448, 139);
             this.posEvolucion.Name = "posEvolucion";
             this.posEvolucion.Size = new System.Drawing.Size(168, 50);
