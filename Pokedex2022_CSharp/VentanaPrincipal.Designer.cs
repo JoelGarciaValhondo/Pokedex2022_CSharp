@@ -44,6 +44,8 @@
             this.movimiento4 = new System.Windows.Forms.Label();
             this.habilidadPokemon = new System.Windows.Forms.Label();
             this.descripcion = new System.Windows.Forms.Button();
+            this.preEvolucion = new System.Windows.Forms.Label();
+            this.posEvolucion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,7 +103,7 @@
             this.alturaPokemon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.alturaPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alturaPokemon.ForeColor = System.Drawing.Color.White;
-            this.alturaPokemon.Location = new System.Drawing.Point(308, 183);
+            this.alturaPokemon.Location = new System.Drawing.Point(308, 218);
             this.alturaPokemon.Name = "alturaPokemon";
             this.alturaPokemon.Size = new System.Drawing.Size(142, 30);
             this.alturaPokemon.TabIndex = 4;
@@ -113,7 +115,7 @@
             this.pesoPokemon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pesoPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pesoPokemon.ForeColor = System.Drawing.Color.White;
-            this.pesoPokemon.Location = new System.Drawing.Point(472, 183);
+            this.pesoPokemon.Location = new System.Drawing.Point(472, 218);
             this.pesoPokemon.Name = "pesoPokemon";
             this.pesoPokemon.Size = new System.Drawing.Size(144, 30);
             this.pesoPokemon.TabIndex = 5;
@@ -126,7 +128,7 @@
             this.tipos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tipos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tipos.ForeColor = System.Drawing.Color.White;
-            this.tipos.Location = new System.Drawing.Point(308, 254);
+            this.tipos.Location = new System.Drawing.Point(308, 276);
             this.tipos.Name = "tipos";
             this.tipos.Size = new System.Drawing.Size(261, 30);
             this.tipos.TabIndex = 6;
@@ -139,7 +141,7 @@
             this.especiePokemon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.especiePokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.especiePokemon.ForeColor = System.Drawing.Color.White;
-            this.especiePokemon.Location = new System.Drawing.Point(308, 315);
+            this.especiePokemon.Location = new System.Drawing.Point(308, 327);
             this.especiePokemon.Name = "especiePokemon";
             this.especiePokemon.Size = new System.Drawing.Size(125, 48);
             this.especiePokemon.TabIndex = 8;
@@ -152,7 +154,7 @@
             this.habitatPokemon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.habitatPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.habitatPokemon.ForeColor = System.Drawing.Color.White;
-            this.habitatPokemon.Location = new System.Drawing.Point(492, 354);
+            this.habitatPokemon.Location = new System.Drawing.Point(492, 368);
             this.habitatPokemon.Name = "habitatPokemon";
             this.habitatPokemon.Size = new System.Drawing.Size(124, 48);
             this.habitatPokemon.TabIndex = 9;
@@ -218,7 +220,7 @@
             this.habilidadPokemon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.habilidadPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.habilidadPokemon.ForeColor = System.Drawing.Color.White;
-            this.habilidadPokemon.Location = new System.Drawing.Point(308, 395);
+            this.habilidadPokemon.Location = new System.Drawing.Point(308, 404);
             this.habilidadPokemon.Name = "habilidadPokemon";
             this.habilidadPokemon.Size = new System.Drawing.Size(142, 48);
             this.habilidadPokemon.TabIndex = 14;
@@ -239,12 +241,38 @@
             this.descripcion.UseVisualStyleBackColor = false;
             this.descripcion.Click += new System.EventHandler(this.descripcion_Click);
             // 
+            // preEvolucion
+            // 
+            this.preEvolucion.BackColor = System.Drawing.Color.Yellow;
+            this.preEvolucion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.preEvolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.preEvolucion.ForeColor = System.Drawing.Color.Black;
+            this.preEvolucion.Location = new System.Drawing.Point(276, 139);
+            this.preEvolucion.Name = "preEvolucion";
+            this.preEvolucion.Size = new System.Drawing.Size(157, 50);
+            this.preEvolucion.TabIndex = 16;
+            this.preEvolucion.Text = "PreEvolucion:";
+            // 
+            // posEvolucion
+            // 
+            this.posEvolucion.BackColor = System.Drawing.Color.Yellow;
+            this.posEvolucion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.posEvolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.posEvolucion.ForeColor = System.Drawing.Color.Black;
+            this.posEvolucion.Location = new System.Drawing.Point(448, 139);
+            this.posEvolucion.Name = "posEvolucion";
+            this.posEvolucion.Size = new System.Drawing.Size(168, 50);
+            this.posEvolucion.TabIndex = 17;
+            this.posEvolucion.Text = "PosEvolucion:";
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(638, 655);
+            this.ClientSize = new System.Drawing.Size(633, 655);
+            this.Controls.Add(this.posEvolucion);
+            this.Controls.Add(this.preEvolucion);
             this.Controls.Add(this.descripcion);
             this.Controls.Add(this.habilidadPokemon);
             this.Controls.Add(this.movimiento4);
@@ -285,6 +313,8 @@
         private System.Windows.Forms.Label movimiento4;
         private System.Windows.Forms.Label habilidadPokemon;
         private System.Windows.Forms.Button descripcion;
+        private System.Windows.Forms.Label preEvolucion;
+        private System.Windows.Forms.Label posEvolucion;
     }
 }
 
